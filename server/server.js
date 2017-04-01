@@ -2,11 +2,13 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const path = require('path');
-const mongoose = require('mongoose');
 
+<<<<<<< HEAD
 const songController = require('./mongoosedb/songController');
+=======
+>>>>>>> a2ddec435e48eab4526016680d0854afc3af08cd
 
-mongoose.connect('mongodb://local/scratch')
+
 
 //get request dependency
 const axios = require('axios');

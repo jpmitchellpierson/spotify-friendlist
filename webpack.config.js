@@ -10,6 +10,13 @@ module.exports = {
     filename: 'bundle.js',
   },
   module: {
+    loaders: [
+      {
+        test: /(\.css|\.scss)$/,
+        include: [path.resolve(_dirname, 'client/scss')],
+        loaders: ['style', 'css', 'sass']
+      }
+    ],
     rules: [
       {
         test: /\.js$/,
