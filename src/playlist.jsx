@@ -11,7 +11,7 @@ class Playlist extends React.Component {
     }
   }
 
-  ComponentDidMount() {
+  add() {
     axios.post(this.props.playlistUrl)
       .then(res => {
         let playlist = res.data.children.map(playlist => playlist.data);
